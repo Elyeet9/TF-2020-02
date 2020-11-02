@@ -1,9 +1,9 @@
 #include "pch.h"
 #include "MyForm.h"
-using namespace TrabajoFinal;
+#include <time.h>
 using namespace System;
-
-int main(array<System::String ^> ^args)
+using namespace TrabajoFinal;
+int main()
 {
     Application::Run(gcnew MyForm);
     return 0;
