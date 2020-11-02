@@ -1,0 +1,2 @@
+# TF-2020-02
+Juego de laberinto, juegas como el rey y comienzas con dos aliados. Debes recuperar a tus aliados y escapar del laberinto. En el trayecto hay "corrupts" que convierten a tus aliados en enemigos. Si no ganas en el tiempo indicado, los corrupts llamaran a los "assassin" para que te maten a ti y a tus aliados. Si un assasin o corrupt te toca, pierdes una vida. Alrededor del mapa apareceran portales aleatorios en el tiempo para mejor desplazamiento.
