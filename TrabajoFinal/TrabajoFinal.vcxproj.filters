@@ -35,6 +35,9 @@
     <ClInclude Include="CJuego.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CEntidad.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TrabajoFinal.cpp">
@@ -53,6 +56,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CJuego.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CEntidad.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

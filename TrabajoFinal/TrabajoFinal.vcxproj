@@ -127,6 +127,7 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CEntidad.hpp" />
     <ClInclude Include="CImagen.hpp" />
     <ClInclude Include="CJuego.hpp" />
     <ClInclude Include="MyForm.h">
@@ -137,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="CEntidad.cpp" />
     <ClCompile Include="CImagen.cpp" />
     <ClCompile Include="CJuego.cpp" />
     <ClCompile Include="MyForm.cpp" />
