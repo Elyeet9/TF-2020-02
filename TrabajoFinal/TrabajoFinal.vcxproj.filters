@@ -29,6 +29,12 @@
     <ClInclude Include="MyForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CImagen.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CJuego.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TrabajoFinal.cpp">
@@ -42,6 +48,12 @@
     </ClCompile>
     <ClCompile Include="MyForm.cpp">
       <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CImagen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CJuego.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
