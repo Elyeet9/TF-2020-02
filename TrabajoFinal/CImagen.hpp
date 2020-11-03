@@ -20,7 +20,7 @@ public:
 	bool hay_colision(CImagen^ otro) {
 		return this->area_dibujo.IntersectsWith(otro->area_dibujo);
 	}
-	void renderizar(Graphics^ graficador) {
+	virtual void renderizar(Graphics^ graficador) {
 		this->mover();
 		this->dibujar(graficador);
 	}

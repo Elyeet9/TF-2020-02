@@ -1,4 +1,6 @@
-﻿  CJuego.cpp
+﻿  CEntidad.cpp
+  CImagen.cpp
+  CJuego.cpp
   MyForm.cpp
   TrabajoFinal.cpp
   Generating Code...
