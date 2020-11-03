@@ -21,13 +21,14 @@ public:
 		PlaySound(TEXT("ost\\Awake.wav"), NULL, SND_ASYNC | SND_FILENAME | SND_LOOP);
 	}
 	~CJuego() {
-		delete escenario;
-		delete rey;
-		delete aliado;
-		delete corrupt;
-		delete assassin;
+		delete escenario, rey, aliado, corrupt, assassin;
 		PlaySound(NULL, NULL, 0);
 	}
+	void jugar(Graphics^ graficador) {
+		renderizar(graficador);
+	}
+	void mover_rey(short new_dx, short new_dy) { rey->set_direccion(new_dx, new_dy); }
+private:
 	void renderizar(Graphics^ graficador) {
 		escenario->renderizar(graficador);
 		aliado->renderizar(graficador);
@@ -35,5 +36,4 @@ public:
 		assassin->renderizar(graficador);
 		rey->renderizar(graficador);
 	}
-	void mover_rey(short new_dx, short new_dy) { rey->set_direccion(new_dx, new_dy); }
 };

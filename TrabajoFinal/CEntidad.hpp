@@ -19,7 +19,9 @@ public:
         this->mover();
         this->dibujar(graficador);
     }
-    short get_indice() { return indice; }
+    bool perder_vida() {
+        return --vidas == 0;
+    }
 protected:
     void dibujar(Graphics^ graficador) override {
         System::Drawing::Rectangle area_recorte = calc_area_recorte();
