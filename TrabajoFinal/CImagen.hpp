@@ -28,6 +28,9 @@ public:
 		this->dx = new_dx;
 		this->dy= new_dy;
 	}
+	//by jhinta
+	short getX() { return area_dibujo.X; }
+	short getY() { return area_dibujo.Y; }
 protected:
 	virtual void dibujar(Graphics^ graficador) {
 		graficador->DrawImage(this->imagen, this->area_dibujo);

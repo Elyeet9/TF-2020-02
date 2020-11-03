@@ -3,7 +3,7 @@
 ref class CEntidad :
     public CImagen
 {
-    short vidas;
+    short vidas; 
     short n_filas;
     short n_columnas;
     short indice;
@@ -38,4 +38,4 @@ private:
         return System::Drawing::Rectangle(x, y, ancho_subimagen, alto_subimagen);
     }
 };
-
+//by jhinta
