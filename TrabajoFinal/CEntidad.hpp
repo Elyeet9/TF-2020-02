@@ -15,11 +15,13 @@ public:
         this->mover();
         this->dibujar(graficador);
     }
+    short get_indice() { return indice; }
 protected:
     virtual void dibujar(Graphics^ graficador) override {
         System::Drawing::Rectangle area_recorte = calc_area_recorte();
         graficador->DrawImage(imagen, area_dibujo, area_recorte, GraphicsUnit::Pixel);
         if (dx != 0 || dy != 0)++indice %= n_columnas;
+        else indice = 0;
     }
 private:
     void mover() {
