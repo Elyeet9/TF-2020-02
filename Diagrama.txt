@@ -1,6 +1,6 @@
 //yuml.me
 [CJuego|-rey:CRey;-aliados:CArregloAliados;-corruptos:CArregloCorruptos;-asesinos:CArregloAsesinos|+CJuego(Rectangle area_dibujo);+~CJuego();+jugar():void;+mover_rey():void;-renderizar():void]
-[CImagen|#area_dibujo:Rectangle;#imagen:Bitmap;#dx:short;#dy:short|+CImagen(String ruta, Rectangle area_dibujo);+~CImagen();+hay_colision(CImagen otro):bool; +renderizar(Graphics graficador):virtual void; +set_direccion(short new_dx, short new_dy):void;#dibujar(Graphics graficador): virtual void;#mover():void]
+[CImagen|#area_dibujo:Rectangle;#imagen:Bitmap;#dx:short;#dy:short|+CImagen(String ruta, Rectangle area_dibujo);+~CImagen();+hay_colision(CImagen otro):bool; +renderizar(Graphics graficador):virtual void; +set_direccion(short new_dx, short new_dy):void;+Get_x():short;+Get_y():short;#dibujar(Graphics graficador): virtual void;#mover():void]
 [CEscenario]
 [CPared]
 [CEntidad|-vidas:short;-n_filas:short;-n_columnas:short;-indice:short;-fila:short|+CEntidad(String ruta, Rectangle area_dibujo,short n_filas, short n_columnas, short vidas);+renderizar():void override;+perder_vida():bool;-dibujar:void override;-calc_area_recorte():Rectangle]
