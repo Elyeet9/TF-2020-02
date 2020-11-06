@@ -67,7 +67,7 @@ namespace TrabajoFinal {
 		}
 #pragma endregion
 	private: System::Void animar(System::Object^ sender, System::EventArgs^ e) {
-		this->juego->jugar(this->buffer->Graphics);
+		this->juego->jugar(this->buffer->Graphics, this->ClientRectangle.Width, this->ClientRectangle.Height);
 		this->juego->mover_rey(0, 0);
 		this->buffer->Render();
 	}

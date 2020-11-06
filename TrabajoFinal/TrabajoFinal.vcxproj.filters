@@ -41,6 +41,12 @@
     <ClInclude Include="CAliado.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CRey.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CArregloAliados.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TrabajoFinal.cpp">
@@ -65,6 +71,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CAliado.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CRey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CArregloAliados.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

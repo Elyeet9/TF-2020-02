@@ -1,8 +1,8 @@
-﻿  CAliado.cpp
-  CEntidad.cpp
+﻿  CArregloAliados.cpp
   CJuego.cpp
   MyForm.cpp
   TrabajoFinal.cpp
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TrabajoFinal\TrabajoFinal.cpp(9,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   TrabajoFinal.vcxproj -> D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TrabajoFinal\Debug\TrabajoFinal.exe
