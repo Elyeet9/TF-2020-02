@@ -133,6 +133,7 @@
     <ClInclude Include="CImagen.hpp" />
     <ClInclude Include="CJuego.hpp" />
     <ClInclude Include="CRey.hpp" />
+    <ClInclude Include="Laberinto.hpp" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

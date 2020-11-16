@@ -18,6 +18,7 @@ namespace TrabajoFinal {
 		MyForm(void)
 		{
 			InitializeComponent();
+			this->Size = System::Drawing::Size(CAS_ANCHO * (ANCHO+1.45), CAS_ANCHO * (ALTO + 2));
 			this->graficador = this->CreateGraphics();
 			this->buffer = BufferedGraphicsManager::Current->Allocate(this->graficador, this->ClientRectangle);
 			this->juego = gcnew CJuego(this->ClientRectangle);
@@ -58,9 +59,10 @@ namespace TrabajoFinal {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(980, 555);
+			this->Enabled = false;
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
-			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Text = L"Corrupts";
 			this->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &MyForm::caminar);
 			this->ResumeLayout(false);
 
@@ -74,10 +76,10 @@ namespace TrabajoFinal {
 	private: System::Void caminar(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
 		switch (e->KeyCode)
 		{
-		case Keys::W: this->juego->mover_rey(0, -10); break;
-		case Keys::A: this->juego->mover_rey(-10, 0); break;
-		case Keys::S: this->juego->mover_rey(0, 10); break;
-		case Keys::D: this->juego->mover_rey(10, 0); break;
+		case Keys::W: this->juego->mover_rey(0, -5); break;
+		case Keys::A: this->juego->mover_rey(-5, 0); break;
+		case Keys::S: this->juego->mover_rey(0, 5); break;
+		case Keys::D: this->juego->mover_rey(5, 0); break;
 		}
 	}
 	};
