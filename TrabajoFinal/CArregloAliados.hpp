@@ -8,14 +8,11 @@ ref class CArregloAliados
 {
     List<CAliado^>^ aliados;
     Bitmap^ imagen;
-    short* orden;
-    short n_orden;
     short rey_dx, rey_dy;
+    short cont;
 public:
-    CArregloAliados(String^ ruta, short n, short w, short h, Laberinto^ laberinto) {//la clase usa/depende de la clase laberinto
+    CArregloAliados(String^ ruta, short n, short w, short h, Laberinto^ laberinto) : cont(0) {//la clase usa/depende de la clase laberinto
         aliados = gcnew List<CAliado^>;
-        orden = nullptr;
-        n_orden = 0;
         this->imagen = gcnew Bitmap(ruta);
         for (short i = 0; i < n; ++i) {
             System::Drawing::Rectangle area;
@@ -34,7 +31,6 @@ public:
         }
         delete aliados;
         delete imagen;
-        if (orden != nullptr) delete[] orden;
     }
     void renderizar(Graphics^ graficador, short w, short h, CRey^ rey, Laberinto^ laberinto) {
         if (rey->get_dx() != 0 || rey->get_dy() != 0) {
@@ -49,15 +45,40 @@ private:
         for (short i = 0; i < this->aliados->Count; i++)
         {
             if (this->aliados[i]->get_perseguir()) continue;
-            if (this->aliados[i]->hay_colision(rey)) aliados[i]->set_perseguir(true);
+            if (this->aliados[i]->hay_colision(rey)) {
+                aliados[i]->set_perseguir(true);
+                cont++;
+            }
         }
     }
     
     void mover(Graphics^ graficador, short w, short h, CRey^ rey, short rey_dx, short rey_dy, Laberinto^ laberinto) {
-        for (short i = 0; i < this->aliados->Count; ++i) {
-            colision_rey(rey);
-            if (aliados[i]->get_perseguir())
+        short i;
+        colision_rey(rey);
+        for (i = 0; i < this->aliados->Count; ++i) {
+            if (aliados[i]->get_perseguir()) {
                 this->aliados[i]->mover_aliado(rey->getX() - 4 * rey_dx, rey->getY() - 5 * rey_dy);
+                break;
+            }
+        }
+        if (cont >= 2) {
+            for (short j = 0; j < cont; j++)
+            {
+
+                short posX = aliados[i]->getX();
+                short posY = aliados[i]->getY();
+                i++;
+                for (i; i < this->aliados->Count; i++)
+                {
+                    if (aliados[i]->get_perseguir()) {
+                        this->aliados[i]->mover_aliado(posX - 4 * rey_dx, posY - 5 * rey_dy);
+                        break;
+                    }
+                }
+            }
+        }
+        for (i = 0; i < this->aliados->Count; i++)
+        {
             aliados[i]->renderizar(graficador, w, h, laberinto);
         }
     }

@@ -33,8 +33,9 @@ public:
 	void jugar(Graphics^ graficador, short w, short h) {
 		renderizar(graficador, w, h);
 	}
-	void mover_rey(short new_dx, short new_dy) { 
+	void mover_rey(short new_dx, short new_dy, bool cam) { 
 		rey->set_direccion(new_dx, new_dy);
+		rey->set_caminando(cam);
 	}
 private:
 	void renderizar(Graphics^ graficador, short w, short h) {

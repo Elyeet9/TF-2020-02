@@ -64,23 +64,26 @@ namespace TrabajoFinal {
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Corrupts";
 			this->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &MyForm::caminar);
+			this->KeyUp += gcnew System::Windows::Forms::KeyEventHandler(this, &MyForm::parar);
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
 	private: System::Void animar(System::Object^ sender, System::EventArgs^ e) {
 		this->juego->jugar(this->buffer->Graphics, this->ClientRectangle.Width, this->ClientRectangle.Height);
-		this->juego->mover_rey(0, 0);
 		this->buffer->Render();
 	}
 	private: System::Void caminar(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
 		switch (e->KeyCode)
 		{
-		case Keys::W: this->juego->mover_rey(0, -5); break;
-		case Keys::A: this->juego->mover_rey(-5, 0); break;
-		case Keys::S: this->juego->mover_rey(0, 5); break;
-		case Keys::D: this->juego->mover_rey(5, 0); break;
+		case Keys::W: this->juego->mover_rey(0, -5, true); break;
+		case Keys::A: this->juego->mover_rey(-5, 0, true); break;
+		case Keys::S: this->juego->mover_rey(0, 5, true); break;
+		case Keys::D: this->juego->mover_rey(5, 0, true); break;
 		}
+	}
+	private: System::Void parar(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
+		this->juego->mover_rey(0, 0, false);
 	}
 	};
 }
