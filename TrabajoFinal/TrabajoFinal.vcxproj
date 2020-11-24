@@ -127,6 +127,7 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AEstrella.hpp" />
     <ClInclude Include="CAliado.hpp" />
     <ClInclude Include="CArregloAliados.hpp" />
     <ClInclude Include="CEntidad.hpp" />
@@ -141,6 +142,7 @@
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AEstrella.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CAliado.cpp" />
     <ClCompile Include="CArregloAliados.cpp" />

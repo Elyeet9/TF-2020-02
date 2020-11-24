@@ -50,6 +50,9 @@
     <ClInclude Include="Laberinto.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AEstrella.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TrabajoFinal.cpp">
@@ -80,6 +83,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CArregloAliados.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AEstrella.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

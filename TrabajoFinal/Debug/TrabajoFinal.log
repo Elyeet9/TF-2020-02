@@ -1,8 +1,9 @@
-﻿  MyForm.cpp
-D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TrabajoFinal\MyForm.h(21,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+﻿  AEstrella.cpp
+  MyForm.cpp
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TrabajoFinal\MyForm.h(21,56): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   TrabajoFinal.cpp
-D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TrabajoFinal\MyForm.h(21,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TrabajoFinal\MyForm.h(21,56): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TrabajoFinal\TrabajoFinal.cpp(9,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
-  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  AEstrella.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   TrabajoFinal.vcxproj -> D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TrabajoFinal\Debug\TrabajoFinal.exe
