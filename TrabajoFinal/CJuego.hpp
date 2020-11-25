@@ -5,6 +5,7 @@
 #include "CEntidad.hpp"
 #include "CRey.hpp"
 #include "CArregloAliados.hpp"
+#include "CArregloCorruptos.hpp"
 #include "Laberinto.hpp"
 
 ref class CJuego
@@ -12,37 +13,38 @@ ref class CJuego
 	Laberinto^ laberinto;
 	CRey^ rey;
 	CArregloAliados^ aliados;
-	CEntidad^ corrupt;
+	CArregloCorruptos^ corruptos;
 	CEntidad^ assassin;
 	//Para mover el aliado es lo de abajo pero se le puede poner en el arreglo CArregloAliados
 	short new_dx;
 	short new_dy;
+	short n;
 public:
-	CJuego(System::Drawing::Rectangle area_dibujo) {
-		laberinto = gcnew Laberinto();
-		rey = gcnew CRey("img\\rey centrado.png", System::Drawing::Rectangle(CAS_ANCHO, CAS_ANCHO, CAS_ANCHO-5, CAS_ANCHO), 4, 4, 5);
-		aliados = gcnew CArregloAliados("img\\aliado sin sombras.png", 6, area_dibujo.Width, area_dibujo.Height, laberinto);
-		corrupt = gcnew CEntidad("img\\corrupt.png", System::Drawing::Rectangle(600, 300, CAS_ANCHO - 5, CAS_ANCHO), 4, 4, 1);
-		assassin = gcnew CEntidad("img\\assassin.png", System::Drawing::Rectangle(600, 700, 70, 110), 4, 4, 1);
+	CJuego(System::Drawing::Rectangle area_dibujo, short n, short velocidadcorrupt) : n(n) {
+		this->laberinto = gcnew Laberinto();
+		this->rey = gcnew CRey("img\\rey centrado.png", System::Drawing::Rectangle(CAS_ANCHO, CAS_ANCHO, CAS_ANCHO-5, CAS_ANCHO), 4, 4, 5);
+		this->aliados = gcnew CArregloAliados("img\\aliado sin sombras.png", n, area_dibujo.Width, area_dibujo.Height, laberinto);
+		this->corruptos = gcnew CArregloCorruptos("img\\corrupt.png", n * 0.4, area_dibujo.Width, area_dibujo.Height, laberinto, this->rey->getX(), this->rey->getY(), velocidadcorrupt);
+		this->assassin = gcnew CEntidad("img\\assassin.png", System::Drawing::Rectangle(600, 700, 70, 110), 4, 4, 1);
 		PlaySound(TEXT("ost\\Awake.wav"), NULL, SND_ASYNC | SND_FILENAME | SND_LOOP);
 	}
 	~CJuego() {
-		delete rey, aliados, corrupt, assassin;
+		delete rey, aliados, corruptos, assassin;
 		PlaySound(NULL, NULL, 0);
 	}
 	void jugar(Graphics^ graficador, short w, short h) {
 		renderizar(graficador, w, h);
 	}
 	void mover_rey(short new_dx, short new_dy, bool cam) { 
-		rey->set_direccion(new_dx, new_dy);
-		rey->set_caminando(cam);
+		this->rey->set_direccion(new_dx, new_dy);
+		this->rey->set_caminando(cam);
 	}
 private:
 	void renderizar(Graphics^ graficador, short w, short h) {
-		laberinto->renderizar(graficador, w, h);
-		aliados->renderizar(graficador, w, h, rey, laberinto);
-		rey->renderizar(graficador, w, h, laberinto);
-		//corrupt->renderizar(graficador, w, h, laberinto);
-		//assassin->renderizar(graficador, w, h, laberinto);
+		this->laberinto->renderizar(graficador, w, h);
+		this->aliados->renderizar(graficador, w, h, rey, laberinto);
+		this->corruptos->renderizar(graficador, w, h, laberinto, this->rey);
+		this->rey->renderizar(graficador, w, h, laberinto);
+		//this->assassin->renderizar(graficador, w, h, laberinto);
 	}
 };

@@ -7,8 +7,6 @@ ref class CAliado :
     bool impostor;
     bool perseguir;
 public:
-    CAliado(String^ ruta, System::Drawing::Rectangle area_dibujo, short n_filas, short n_columnas, short vidas)
-        : impostor(false), perseguir(false), CEntidad(ruta, area_dibujo, n_filas, n_columnas, vidas) {}
     CAliado(Bitmap^ imagen, System::Drawing::Rectangle area_dibujo, short n_filas, short n_columnas, short vidas)
         : impostor(false), perseguir(false), CEntidad(imagen, area_dibujo, n_filas, n_columnas, vidas) {}
     void mover_aliado(int pos_x, int pos_y) {

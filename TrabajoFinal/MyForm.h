@@ -21,7 +21,7 @@ namespace TrabajoFinal {
 			this->Size = System::Drawing::Size(CAS_ANCHO * (ANCHO+1.45), CAS_ANCHO * (ALTO + 2));
 			this->graficador = this->CreateGraphics();
 			this->buffer = BufferedGraphicsManager::Current->Allocate(this->graficador, this->ClientRectangle);
-			this->juego = gcnew CJuego(this->ClientRectangle);
+			this->juego = gcnew CJuego(this->ClientRectangle, 6, 5);
 		}
 
 	protected:

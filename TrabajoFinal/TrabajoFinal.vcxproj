@@ -130,6 +130,8 @@
     <ClInclude Include="AEstrella.hpp" />
     <ClInclude Include="CAliado.hpp" />
     <ClInclude Include="CArregloAliados.hpp" />
+    <ClInclude Include="CArregloCorruptos.hpp" />
+    <ClInclude Include="CCorrupto.hpp" />
     <ClInclude Include="CEntidad.hpp" />
     <ClInclude Include="CImagen.hpp" />
     <ClInclude Include="CJuego.hpp" />
@@ -146,6 +148,8 @@
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CAliado.cpp" />
     <ClCompile Include="CArregloAliados.cpp" />
+    <ClCompile Include="CArregloCorruptos.cpp" />
+    <ClCompile Include="CCorrupto.cpp" />
     <ClCompile Include="CEntidad.cpp" />
     <ClCompile Include="CImagen.cpp" />
     <ClCompile Include="CJuego.cpp" />

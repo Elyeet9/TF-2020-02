@@ -45,7 +45,7 @@ public:
             this->mat[i] = new int[ANCHO];
 
         for (short i = 0; i < ALTO + 1; ++i) {
-            for (short j = 0; j <= ANCHO; ++j)
+            for (short j = 0; j < ANCHO+1; ++j)
                 mat[i][j] = 0;
         }
         this->generar_camino();
@@ -86,8 +86,8 @@ public:
         return false;
     }
 
-    bool es_pared(short x, short y) {
-        if (mat[y][x] == 0) return true;
+    bool es_pared(short i, short j) {
+        if (mat[i][j] == 0) return true;
         else return false;
     }
 private:
@@ -162,5 +162,4 @@ private:
 
         }
     }
-
 };
