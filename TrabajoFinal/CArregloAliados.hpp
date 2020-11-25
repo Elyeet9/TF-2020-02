@@ -20,7 +20,7 @@ public:
             {
                 area = System::Drawing::Rectangle(rand() % ANCHO * CAS_ANCHO, rand() % ALTO * CAS_ANCHO, CAS_ANCHO-5, CAS_ANCHO);
             } while (laberinto->colision_pared(area));
-            CAliado^ new_aliado = gcnew CAliado(imagen, area, 4, 4, 1);
+            CAliado^ new_aliado = gcnew CAliado(imagen, area, 4, 4);
             this->aliados->Add(new_aliado);
         }
     }

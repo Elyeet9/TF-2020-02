@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include "CCorrupto.hpp"
 #include "CRey.hpp"
+#include "Vida.hpp"
 #include "Laberinto.hpp"
 using namespace System::Collections::Generic;
 
@@ -18,8 +19,8 @@ public:
             do
             {
                 area = System::Drawing::Rectangle(rand() % ANCHO * CAS_ANCHO, rand() % ALTO * CAS_ANCHO, CAS_ANCHO - 5, CAS_ANCHO);
-            } while (laberinto->colision_pared(area));
-            CCorrupto^ new_corrupto = gcnew CCorrupto(imagen, area, 4, 4, 1, reyX, reyY, velocidad, laberinto);
+            } while (area.X<w/2||area.Y<h/2||laberinto->colision_pared(area));
+            CCorrupto^ new_corrupto = gcnew CCorrupto(imagen, area, 4, 4, reyX, reyY, velocidad, laberinto);
             this->corruptos->Add(new_corrupto);
         }
     }
@@ -31,17 +32,18 @@ public:
         delete corruptos;
         delete imagen;
     }
-    void renderizar(Graphics^ graficador, short w, short h, Laberinto^ laberinto, CRey^ rey) {
+    void renderizar(Graphics^ graficador, short w, short h, Laberinto^ laberinto, CRey^ rey, Vida^ vidas) {
         for (short i = 0; i < this->corruptos->Count; i++)
         {
-            if (corruptos[i]->hay_colision(rey)) {
-                rey->perder_vida();
-                this->corruptos->Remove(corruptos[i]);
-                i--;
-                continue;
-            }
             this->corruptos[i]->actualizar_camino(rey->getX(), rey->getY());
             this->corruptos[i]->renderizar(graficador, w, h, laberinto);
+            if (corruptos[i]->hay_colision(rey)) {
+                rey->perder_vida();
+                vidas->perder_vida();
+                this->corruptos->RemoveAt(i);
+                --i;
+                continue;
+            }
         }
     }
 };

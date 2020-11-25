@@ -142,6 +142,7 @@
     </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="Vida.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AEstrella.cpp" />
@@ -162,6 +163,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="TrabajoFinal.cpp" />
+    <ClCompile Include="Vida.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />

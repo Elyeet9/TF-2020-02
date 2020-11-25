@@ -21,7 +21,7 @@ namespace TrabajoFinal {
 			this->Size = System::Drawing::Size(CAS_ANCHO * (ANCHO+1.45), CAS_ANCHO * (ALTO + 2));
 			this->graficador = this->CreateGraphics();
 			this->buffer = BufferedGraphicsManager::Current->Allocate(this->graficador, this->ClientRectangle);
-			this->juego = gcnew CJuego(this->ClientRectangle, 6, 5);
+			this->juego = gcnew CJuego(this->ClientRectangle, 20, 5, 3);
 		}
 
 	protected:
@@ -70,8 +70,10 @@ namespace TrabajoFinal {
 		}
 #pragma endregion
 	private: System::Void animar(System::Object^ sender, System::EventArgs^ e) {
-		this->juego->jugar(this->buffer->Graphics, this->ClientRectangle.Width, this->ClientRectangle.Height);
-		this->buffer->Render();
+		if (this->juego->jugar(this->buffer->Graphics, this->ClientRectangle.Width, this->ClientRectangle.Height)) {
+			Close();
+		}
+		else this->buffer->Render();
 	}
 	private: System::Void caminar(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
 		switch (e->KeyCode)

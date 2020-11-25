@@ -7,8 +7,8 @@ ref class CAliado :
     bool impostor;
     bool perseguir;
 public:
-    CAliado(Bitmap^ imagen, System::Drawing::Rectangle area_dibujo, short n_filas, short n_columnas, short vidas)
-        : impostor(false), perseguir(false), CEntidad(imagen, area_dibujo, n_filas, n_columnas, vidas) {}
+    CAliado(Bitmap^ imagen, System::Drawing::Rectangle area_dibujo, short n_filas, short n_columnas)
+        : impostor(false), perseguir(false), CEntidad(imagen, area_dibujo, n_filas, n_columnas) {}
     void mover_aliado(int pos_x, int pos_y) {
         //Si quieren que el aliado se mueva igual que el prota cambiar dx y dy de 5 por 10
         if (area_dibujo.X == pos_x)     { this->dx = 0; }

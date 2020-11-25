@@ -59,6 +59,9 @@
     <ClInclude Include="CArregloCorruptos.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Vida.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TrabajoFinal.cpp">
@@ -98,6 +101,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CArregloCorruptos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vida.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

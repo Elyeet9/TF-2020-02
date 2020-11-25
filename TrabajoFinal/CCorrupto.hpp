@@ -8,8 +8,8 @@ ref class CCorrupto :
     AEstrella^ camino;
     short velocidad;
 public:
-    CCorrupto(Bitmap^ imagen, System::Drawing::Rectangle area_dibujo, short n_filas, short n_columnas, short vidas, short reyX, short reyY, short velocidad, Laberinto^ laberinto)
-        : velocidad(velocidad), CEntidad(imagen, area_dibujo, n_filas, n_columnas, vidas) {
+    CCorrupto(Bitmap^ imagen, System::Drawing::Rectangle area_dibujo, short n_filas, short n_columnas, short reyX, short reyY, short velocidad, Laberinto^ laberinto)
+        : velocidad(velocidad), CEntidad(imagen, area_dibujo, n_filas, n_columnas) {
         camino = gcnew AEstrella(laberinto, this->area_dibujo.X, this->area_dibujo.Y, reyX, reyY);
     }
 

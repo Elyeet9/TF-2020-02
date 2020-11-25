@@ -5,22 +5,19 @@ ref class CEntidad :
     public CImagen//hereda publicamente de la clase CImagen
 {
 protected:
-    short vidas; 
     short n_filas;
     short n_columnas;
     short indice;
     short fila;
 public:
-    CEntidad(String^ ruta, System::Drawing::Rectangle area_dibujo,short n_filas, short n_columnas, short vidas)
-        : CImagen(ruta, area_dibujo), n_filas(n_filas), n_columnas(n_columnas), vidas(vidas), indice(0), fila(0) {}
-    CEntidad(Bitmap^ imagen, System::Drawing::Rectangle area_dibujo, short n_filas, short n_columnas, short vidas)
-        : CImagen(imagen, area_dibujo), n_filas(n_filas), n_columnas(n_columnas), vidas(vidas), indice(0), fila(0) {}
+    CEntidad(String^ ruta, System::Drawing::Rectangle area_dibujo,short n_filas, short n_columnas)
+        : CImagen(ruta, area_dibujo), n_filas(n_filas), n_columnas(n_columnas), indice(0), fila(0) {}
+    CEntidad(Bitmap^ imagen, System::Drawing::Rectangle area_dibujo, short n_filas, short n_columnas)
+        : CImagen(imagen, area_dibujo), n_filas(n_filas), n_columnas(n_columnas), indice(0), fila(0) {}
     void renderizar(Graphics^ graficador, short w, short h, Laberinto^ laberinto) {
         this->dibujar(graficador);
         this->mover(w, h, laberinto);
     }
-    void perder_vida() { --vidas; }
-    short get_vida() { return vidas; }
 
     void dibujar(Graphics^ graficador) override {
         System::Drawing::Rectangle area_recorte = calc_area_recorte();
