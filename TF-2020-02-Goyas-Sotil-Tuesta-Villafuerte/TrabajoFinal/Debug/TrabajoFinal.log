@@ -1,0 +1,26 @@
+﻿  CJuego.cpp
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(146,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\CJuego.hpp(44,67): warning C4244: 'argument': conversion from 'double' to 'short', possible loss of data
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\CJuego.hpp(47,66): warning C4244: 'argument': conversion from 'double' to 'short', possible loss of data
+  CPortal.cpp
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(146,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  MyForm.cpp
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(146,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\CJuego.hpp(44,67): warning C4244: 'argument': conversion from 'double' to 'short', possible loss of data
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\CJuego.hpp(47,66): warning C4244: 'argument': conversion from 'double' to 'short', possible loss of data
+  TrabajoFinal.cpp
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(146,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\CJuego.hpp(44,67): warning C4244: 'argument': conversion from 'double' to 'short', possible loss of data
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\CJuego.hpp(47,66): warning C4244: 'argument': conversion from 'double' to 'short', possible loss of data
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\TrabajoFinal.cpp(11,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(128): warning C4715: 'AEstrella::get_new_dx': not all control paths return a value
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(142): warning C4715: 'AEstrella::get_new_dy': not all control paths return a value
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(128): warning C4715: 'AEstrella::get_new_dx': not all control paths return a value
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(142): warning C4715: 'AEstrella::get_new_dy': not all control paths return a value
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(128): warning C4715: 'AEstrella::get_new_dx': not all control paths return a value
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(142): warning C4715: 'AEstrella::get_new_dy': not all control paths return a value
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(128): warning C4715: 'AEstrella::get_new_dx': not all control paths return a value
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\AEstrella.hpp(142): warning C4715: 'AEstrella::get_new_dy': not all control paths return a value
+  AEstrella.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  TrabajoFinal.vcxproj -> D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\Debug\TrabajoFinal.exe

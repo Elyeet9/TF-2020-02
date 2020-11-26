@@ -1,0 +1,7 @@
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\Debug\TrabajoFinal.vcxprojAssemblyReference.cache
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\Debug\TrabajoFinal.ending.resources
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\Debug\TrabajoFinal.menu.resources
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\Debug\TrabajoFinal.MyForm.resources
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\Debug\TrabajoFinal.vcxproj.GenerateResource.cache
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\Debug\TrabajoFinal.exe
+D:\Leonardo\UPC\Ciclo 2020-02\Programacion 2\Trabajo Final\TF-2020-02\TF-2020-02-Goyas-Sotil-Tuesta-Villafuerte\TrabajoFinal\Debug\TrabajoFinal.pdb
